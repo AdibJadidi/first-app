@@ -1,0 +1,80 @@
+.Product {
+  padding: 20px 40px;
+  border: 1px solid darkorange;
+  border-radius: 10px;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 0.1fr 0.5fr 0.1fr 0.1fr 0.3fr;
+  column-gap: 20px;
+  width: 40rem;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.button {
+  color: #d97706;
+  border: 1px solid #d97706;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: white;
+  min-width: 35px;
+  min-height: 35px;
+}
+
+.inc {
+  background-color: #fef3c7;
+}
+
+.quantity {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #fef3c7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #d97706;
+  padding: 2px;
+}
+
+.remove {
+  color: red;
+  border: 1px solid red;
+  min-width: none;
+}
+
+@media screen and (max-width: 760px) {
+  .Product {
+    padding: 20px 20px;
+    width: 80%;
+    grid-template-columns: 5fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-areas: "title quantity increment" "price . decrement";
+    row-gap: 20px;
+    align-items: center;
+  }
+  .product__title {
+    grid-area: title;
+  }
+  .delete {
+    display: none;
+  }
+  .button {
+    width: 35px;
+    height: 35px;
+  }
+  .quantity {
+    justify-self: center;
+    grid-area: quantity;
+  }
+  .increment {
+    grid-area: increment;
+  }
+  .decrement {
+    grid-area: decrement;
+  }
+  .price {
+    grid-area: price;
+  }
+}
