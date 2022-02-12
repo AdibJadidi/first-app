@@ -15,3 +15,24 @@
 .select {
   width: 200px;
 }
+@media screen and (max-width: 1150px) {
+  .sort {
+    width: 100%;
+    justify-content: center;
+  }
+  .selectside {
+    width: 70%;
+  }
+  .selectside .sort__lable {
+    width: 30%;
+  }
+
+  .select {
+    min-width: 70%;
+  }
+}
+@media screen and (max-width: 560px) {
+  .selectside {
+    width: 100%;
+  }
+}

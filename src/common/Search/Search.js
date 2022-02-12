@@ -13,7 +13,7 @@ function SearchBar({ filter }) {
   };
 
   return (
-    <div>
+    <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
       <input
         type="text"
         placeholder="search here"

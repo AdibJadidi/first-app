@@ -13,3 +13,14 @@
 .input::placeholder {
   color: #d9770680;
 }
+
+@media screen and (max-width: 1150px) {
+  .input {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 560px) {
+  .input {
+    width: 100%;
+  }
+}

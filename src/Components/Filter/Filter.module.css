@@ -27,9 +27,12 @@
   width: 200px;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 1150px) {
   .filter {
     height: auto;
+  }
+  .filterbox {
+    width: 70%;
   }
   .selectside {
     padding: 2rem 1rem;
@@ -38,9 +41,15 @@
     justify-content: space-around;
   }
   .selectside .sort__lable {
-    width: 80px;
+    width: 30%;
   }
+
   .select {
-    width: 200px;
+    min-width: 70%;
+  }
+}
+@media screen and (max-width: 560px) {
+  .filterbox {
+    width: 100%;
   }
 }
